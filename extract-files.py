@@ -36,6 +36,8 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(rb'\x09\x00\x00\x12\x89\x02\x09\x0b\x3f\x01\x08\x6b\xca\x01\x00\x54',
                               b'\x09\x00\x00\x12\x89\x02\x09\x0b\x3f\x01\x08\x6b\x0e\x00\x00\x14')
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
+    'vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc': blob_fixup()
+        .regex_replace('    writepid /dev/cpuset/foreground/tasks', '    task_profiles ProcessCapacityHigh HighPerformance'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
