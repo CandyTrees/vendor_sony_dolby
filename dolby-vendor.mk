@@ -29,4 +29,5 @@ PRODUCT_PACKAGES += \
     vendor.dolby.hardware.dms.xml \
     vendor.dolby.media.c2@1.0-service.xml \
     vendor.dolby.hardware.dms@2.0-service \
-    vendor.dolby.media.c2@1.0-service
+    vendor.dolby.media.c2@1.0-service \
+    libspatialaudio

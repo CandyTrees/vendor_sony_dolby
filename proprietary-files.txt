@@ -32,3 +32,7 @@ vendor/lib64/libdlbpreg.so
 vendor/lib64/liboem_specific.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so
+
+# Spatial Audio
+vendor/lib/soundfx/libspatialaudio.so
+vendor/lib64/soundfx/libspatialaudio.so
